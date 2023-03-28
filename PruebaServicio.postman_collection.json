@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "296b184b-5fa3-4f0c-8233-ad420eb0f45b",
+		"name": "PruebaServicio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20492526"
+	},
+	"item": [
+		{
+			"name": "GuardarCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombres\": \"Alonso\",\r\n    \"apellidos\": \"PEREZ\",\r\n    \"identificacion\": \"1\",\r\n    \"telefono\": null,\r\n    \"estado\": false,\r\n    \"paisNacimiento\": \"CR\",\r\n    \"paisResidencia\": \"CR\",\r\n    \"direccion\": \"CR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/api/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarTodosLosClientes",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "ActualzarCliente",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
