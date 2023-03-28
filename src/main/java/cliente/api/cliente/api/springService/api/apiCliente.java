@@ -50,7 +50,7 @@ public class apiCliente {
         return clienteService.desactivarClientePorEstado(id);
     }
 
-    @GetMapping("/buscar/{id}")
+    @PutMapping("/buscar/{id}")
     public clienteDto buscarClientexIdentificacon(@PathVariable int id){
         log.info("Busqueda de Cliente; {}", id);
         return clienteService.obtenerClienteXIdentificacion(id);
