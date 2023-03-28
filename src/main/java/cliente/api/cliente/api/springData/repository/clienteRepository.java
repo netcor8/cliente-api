@@ -16,7 +16,7 @@ public interface clienteRepository extends JpaRepository<cliente, Integer>, JpaS
 
   //  List<cliente> findByCedula(String cedula);
 
-    cliente findClientesByEstado(int estado);
+    cliente findClientesByEstado(int id);
 
 
 
